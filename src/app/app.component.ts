@@ -7,19 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public value: number = 0;
+  val: number = 0;
 
-
-  name: number = 0;
-
-  nameChange(newUserName) {
-    newUserName = parseInt(newUserName);
-
-    this.name = newUserName;
+  valueGet(newValue) {
+    this.val =  parseInt(newValue);
   }
 
   valueChange(){
-    this.value = this.name;
+    this.value = this.val;
   }
-
-  title = 'change-detaction';
 }

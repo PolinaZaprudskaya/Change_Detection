@@ -8,7 +8,7 @@ import {ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, OnInit} fr
 })
 export class DetectChangesComponent implements OnInit {
 
-  @Input() fromParent: number ;
+  @Input() value: number ;
   counter: number = 0;
 
   constructor(private ref: ChangeDetectorRef) {

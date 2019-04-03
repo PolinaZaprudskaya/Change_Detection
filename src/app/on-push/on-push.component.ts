@@ -8,7 +8,7 @@ import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
 })
 export class OnPushComponent implements OnInit {
 
-  @Input() fromParent: number ;
+  @Input() value: number ;
   counter: number = 0;
   constructor() {
   }

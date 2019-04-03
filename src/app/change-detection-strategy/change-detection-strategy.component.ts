@@ -7,7 +7,7 @@ import {Component, OnInit, Input, ChangeDetectionStrategy} from '@angular/core';
   changeDetection: ChangeDetectionStrategy.Default
 })
 export class ChangeDetectionStrategyComponent implements OnInit {
-  @Input() fromParent: number ;
+  @Input() value: number ;
   counter: number = 0;
   constructor() { }
 

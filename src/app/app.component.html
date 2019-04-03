@@ -1,15 +1,15 @@
-<input type="text" placeholder="Time" (input) = "nameChange($event.target.value)">
+<input type="text" placeholder="Time" (input) = "valueGet($event.target.value)">
 <button (click) = valueChange()>add</button>
 <div>
   <p>Default</p>
-  <app-change-detection-strategy [fromParent] = "value"></app-change-detection-strategy>
+  <app-change-detection-strategy [value] = "value"></app-change-detection-strategy>
 </div>
 <div>
   <p>OnPush</p>
-  <app-on-push [fromParent] = "value"></app-on-push>
+  <app-on-push [value] = "value"></app-on-push>
 </div>
 <div>
   <p>ChangeDetector</p>
-  <app-detect-changes [fromParent] = "value" ></app-detect-changes>
+  <app-detect-changes [value] = "value" ></app-detect-changes>
 </div>
 
